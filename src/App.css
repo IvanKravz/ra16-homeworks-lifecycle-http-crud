@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.notes {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.crud {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
