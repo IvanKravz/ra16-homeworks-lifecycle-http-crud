@@ -32,6 +32,7 @@ export default class App extends Component {
 
   requestNotes = async () => {
     const response = await fetch(urlServer);
+    if(!response) return
     const notes = await response.json();
     this.setState((prevState) => ({ ...prevState, notes }));
   }

@@ -7,9 +7,9 @@ export default class NoteFormAdd extends Component {
   
     handleSubmit = (event) => {
         event.preventDefault();
+        if (this.state.text.length === 0) return
         this.props.addNote(this.state);
         this.setState(this.content) 
-     
     }
 
     handleChange = (event) => {
